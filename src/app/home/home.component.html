@@ -1,0 +1,8 @@
+<div class="voting-container">
+    <h1>Voting App</h1>
+    <div *ngFor="let candidate of candidates" class="candidate">
+      <h2>{{ candidate.name }}</h2>
+      <p>Votes: {{ candidate.votes }}</p>
+      <button (click)="vote(candidate)">Vote</button>
+    </div>
+  </div>
